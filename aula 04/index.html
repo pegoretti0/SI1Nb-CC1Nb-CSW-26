@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula-04</title>
+</head>
+<body>
+
+<h1>principais formatos</h1>
+<h2>Negrito / Destaque</h2>
+ <p>na frasetemos <b>parte em negrito </b>usando a tag B(não semantica)</p>
+ <p>na frasetemos <strong>parte em negrito </strong>usando a tag strong(com semantica)</p>
+
+<h2>Itálico vs Ênfase</h2>
+<p><i>Texto em itálico (visual)</i></p>
+<p><em>Texto com ênfase semântica</em></p>
+
+<h2>Texto Marcado</h2>
+<p>Este é um <mark>texto marcado</mark> para chamar atenção.</p>
+<p>Este é um <mark style="background-color: rgb(9, 6, 139);"> texto marcado</mark> para chamar atenção</p>
+
+<h2>Texto Grande e Pequeno</h2>
+<p>estamos trabalhando com um <big>Texto grande</big> e um <small>Texto pequeno</small> nesta frase</p>
+
+<h2>Texto Deletado vs Riscado</h2>
+<p>Este texto foi <del>deletado</del> com a tag del</p>
+<p>Este texto está <s>riscado</s> com a tag s</p>
+
+<h2>Texto Inserido vs Sublinhado</h2>
+<p>Nesta frase vamos demonstrar como destacar um <ins>texto inserido</ins> na frase de forma semantica</p>
+<p>Nesta frase vamos demonstrar como destacar um <u>texto inserido</u> na frase de forma não semantica</p>
+
+<h2>Texto Sobrescrito</h2>
+<p>Exemplo: 10<sup>2</sup> = 100</p>
+
+<h2>Texto Subscrito</h2>
+<p>Fórmula da água: H<sub>2</sub>O</p>
+
+<h2>Trecho de Código</h2>
+<p>Use a função <code>console.log()</code> para mostrar algo no console.</p>
+
+<h2>Endereço</h2>
+<address>
+Rua Exemplo, 123<br>
+Vila Velha - ES<br>
+Brasil
+</address>
+
+<h2>Code (Bloco de código)</h2>
+<pre>
+<code>
+import math
+
+# Coeficientes
+a = float(input("Digite o valor de a: "))
+b = float(input("Digite o valor de b: "))
+c = float(input("Digite o valor de c: "))
+
+# Verificando se é realmente de segundo grau
+if a == 0:
+    print("Isso não é uma equação do segundo grau.")
+else:
+    # Calculando o delta
+    delta = b**2 - 4*a*c
+
+    if delta < 0:
+        print("A equação não possui raízes reais.")
+    elif delta == 0:
+        x = -b / (2*a)
+        print(f"A equação possui uma raiz real: x = {x}")
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2*a)
+        x2 = (-b - math.sqrt(delta)) / (2*a)
+        print(f"As raízes são: x1 = {x1} e x2 = {x2}")
+</code>
+</pre>
+
+<h2>Citações</h2>
+<p>Segundo Albert Einstein:</p>
+<blockquote>
+"A imaginação é mais importante que o conhecimento."
+</blockquote>
+
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+
+</body>
+</html>
